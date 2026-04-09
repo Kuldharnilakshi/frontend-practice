@@ -1,0 +1,79 @@
+body{
+margin:0;
+font-family:Segoe UI;
+background:#121212;
+color:white;
+}
+
+.admin-dashboard{
+display:flex;
+height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:230px;
+background:#1e1e1e;
+padding:25px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+padding:12px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.sidebar li:hover{
+background:#00d4ff;
+color:black;
+}
+
+/* Content */
+
+.content{
+flex:1;
+padding:40px;
+}
+
+.stats{
+display:flex;
+gap:30px;
+margin-bottom:40px;
+}
+
+.stat-card{
+background:#1f1f1f;
+padding:25px;
+border-radius:10px;
+width:180px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Table */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#1a1a1a;
+}
+
+th,td{
+padding:15px;
+border-bottom:1px solid #333;
+}
+
+.danger{
+color:red;
+font-weight:bold;
+}
+
+.safe{
+color:#00ff95;
+}
