@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Commerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://asset.brandfetch.io/iddl2sE-EE/idlB-Uz_FL.jpeg?updated=1717571205853" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 30px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info h3, .contact-form h3 {
+            margin-bottom: 10px;
+            color: #35424a;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin: 5px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            border: 0;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #e8491d;
+        }
+        
+        /* Top Navigation */
+        .topnav {
+            background-color: rgba(135, 182, 240, 0.7);
+            overflow: hidden;
+        }
+
+        .topnav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .topnav li {
+            display: inline-block;
+        }
+
+        .topnav a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #555;
+        }
+
+        .topnav a.active {
+            background-color: #fff;
+            color: black;
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            margin-left: 50px;
+        }
+
+        .logon {
+            height: 60px;
+            width: auto;
+            margin-left: -150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <ul>
+            <li><a href="#"><img src="https://asset.brandfetch.io/iddl2sE-EE/idHB3KpiO_.svg?updated=1717571205764" alt="Shreeram Motors Logo" class="logon"></a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/shreeram_home.html">HOME</a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/collections.html">COLLECTION</a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/aboutus.html">ABOUT</a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/contactus.html" class="active">CONTACT US</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+        </ul>
+    </div>
+
+
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+
+            <div class="contact-info">
+                <h3>Customer Support</h3>
+                <p>Email: support@ecommercewebsite.com</p>
+                <p>Phone: 1-800-123-4567</p>
+                <p>Live Chat: Available 24/7 on our website</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Office Hours</h3>
+                <p>Monday to Friday: 9 AM - 9 PM EST</p>
+                <p>Saturday: 10 AM - 6 PM EST</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Mailing Address</h3>
+                <p>E-Commerce Website</p>
+                <p>1234 Market Street</p>
+                <p>City, State, ZIP Code</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Social Media</h3>
+                <p>Facebook: <a href="#">facebook.com/ecommercewebsite</a></p>
+                <p>Twitter: <a href="#">twitter.com/ecommercewebsite</a></p>
+                <p>Instagram: <a href="#">instagram.com/ecommercewebsite</a></p>
+                <p>LinkedIn: <a href="#">linkedin.com/company/ecommercewebsite</a></p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form action="submit_contact_form.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

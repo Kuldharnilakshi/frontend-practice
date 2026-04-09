@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreeram Motors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://asset.brandfetch.io/iddl2sE-EE/idlB-Uz_FL.jpeg?updated=1717571205853" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            height: 100vh;
+            overflow-y: auto;
+            color: #ffffff;
+        }
+
+        /* Background image with a dark overlay */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://ampere.greaveselectricmobility.com/storage/posts/July2023/DNInlI65qrMwh3CMVc1d.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 1.0; /* Reduce brightness by lowering opacity */
+            filter: brightness(0.8); /* Additional darkening */
+        }
+
+        .topnav {
+            background-color:rgba(135, 182, 240, 0.7);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .topnav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .topnav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .topnav a {
+            color: #fff;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #555;
+        }
+
+        .topnav a.active {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .container {
+            text-align: center;
+            padding-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container h1 {
+            font-size: 60px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .content {
+            color: #f9f9f9;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .search {
+            margin-top: 20px;
+        }
+
+        .search input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .search input[type="text"]:focus {
+            border-color: #555;
+            outline: none;
+        }
+
+        .submit a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            transition: 0.3s;
+        }
+
+        .submit a:hover {
+            background-color: #257ab7;
+            color:white;
+        }
+
+        /* Social media icons vertically placed */
+        .social-icons {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fa {
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 0;
+            border-radius: 50%;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook { background-color: #3b5998; }
+        .fa-youtube { background-color: #ff0000; }
+        .fa-instagram { background-color: #833ab4; }
+
+        /* Ensure all content is visible and no overlaps */
+        header h1 {
+            z-index: 1;
+            color: #ffffff;
+        }
+
+        .content h2 {
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000; /* Increase text visibility */
+        }
+
+        .search input {
+            border: 1px solid #ffffff;
+        }
+
+        .submit a {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="topnav">
+    <ul>
+        <li><a href="#"><img src="https://asset.brandfetch.io/iddl2sE-EE/idHB3KpiO_.svg?updated=1717571205764" alt="Shreeram Motors Logo" class="logon"></a></li>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="collections.html">COLLECTION</a></li>
+        <li><a href="aboutus.html">ABOUT</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+    </ul>
+</div>
+
+<header>
+    <div class="container">
+        <h1>Shreeram Motors</h1>
+        <div class="content">
+            <h2>Purchase Electric Scooters</h2>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Enter Your Scooter Name">
+        </div>
+        <div class="submit">
+            <a href="submit.html">Submit</a>
+        </div>
+    </div>
+</header>
+
+<div class="social-icons">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/shreeram_motors_1011" class="fa fa-instagram"></a>
+</div>
+
+</body>
+</html>

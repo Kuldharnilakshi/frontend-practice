@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to external stylesheet (W3.CSS) -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Internal styles for the document -->
+    <style>
+        body {
+            background-color: #f3f4f6; /* Light gray background */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+       
+        /* Top Navigation */
+        .topnav {
+            background-color: rgba(135, 182, 240, 0.7);
+            overflow: hidden;
+        }
+
+        .topnav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .topnav li {
+            display: inline-block;
+        }
+
+        .topnav a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #555;
+        }
+
+        .topnav a.active {
+            background-color: #fff;
+            color: black;
+        }
+
+        header {
+            background-color: #333; /* Dark gray background */
+            color: #fff; /* White text */
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+            animation: slideDown 0.5s ease-out;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .content-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .w3-container {
+            background-color: #ff6f61; /* Soft red background */
+            color: #fff; /* White text */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: scaleIn 0.5s ease-out;
+        }
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        .w3-row-padding {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .w3-half {
+            flex: 1 1 calc(50% - 20px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .w3-half img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 2px solid #ff6f61; /* Soft red border */
+            transition: transform 0.3s ease;
+        }
+        .w3-half h1, .w3-half h2 {
+            margin: 20px;
+            color: #333; /* Dark gray text */
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+        .w3-half h1 {
+            font-size: 24px; /* Larger font size for headings */
+            margin-bottom: 10px;
+        }
+        .w3-half h2 {
+            font-size: 18px; /* Smaller font size for subheadings */
+            color: #777; /* Light gray text */
+            margin-bottom: 20px;
+        }
+        .details {
+            display: none;
+            padding: 20px;
+            text-align: left;
+            background-color: #f9f9f9; /* Light gray background for details */
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            animation: fadeInDetails 0.5s ease-out;
+        }
+        @keyframes fadeInDetails {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .details p {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #555; /* Medium gray text */
+        }
+        .details button {
+            background-color: #ff6f61; /* Soft red button */
+            color: white; /* White text */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .details button:hover {
+            background-color: #e64d3e; /* Darker shade of red on hover */
+        }
+        .w3-half:hover {
+            transform: translateY(-5px); /* Lift on hover for a subtle effect */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+        .w3-half:hover img {
+            transform: scale(1.1); /* Scale up image on hover */
+        }
+        .w3-half:hover h1, .w3-half:hover h2 {
+            color: #ff6f61; /* Soft red text on hover */
+        }
+        footer {
+            background-color: #333; /* Dark gray background */
+            color: #fff; /* White text */
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+            animation: slideDown 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <ul>
+            <li><a href="#"><img src="https://asset.brandfetch.io/iddl2sE-EE/idHB3KpiO_.svg?updated=1717571205764" alt="Shreeram Motors Logo" class="logon"></a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/shreeram_home.html" >HOME</a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/collections.html"class="active">COLLECTION</a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/aboutus.html">ABOUT</a></li>
+            <li><a href="file:///C:/Users/VAIBHAV/OneDrive/Desktop/shreeram%20motor%20web%20project/contactus.html">CONTACT US</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+        </ul>
+    </div>
+
+    
+    <header>Our Collection</header>
+
+    <section class="content-container">
+        <div class="w3-row-padding">
+            <article class="w3-half">
+                <img src="https://ampere.greaveselectricmobility.com/images/revert/s_primus-masthead.webp" alt="Primus">
+                <h1>PRIMUS</h1>
+                <h2>Faster. Smarter. Safer. Better.</h2>
+                <button onclick="toggleDetails('details1')">Details</button>
+                <div id="details1" class="details">
+                    <p>Price: ₹1,19,900</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li><b>Power-packed Performance:</b> Ride at a top speed of 77kmph, with 0-40kmph acceleration in under 5 sec</li>
+                        <li><b>Stay Connected:</b> Track trips, distance, battery status with seamless bluetooth connectivity</li>
+                        <li><b>107 km Range:</b> Advance LFP battery, 3KV with IP 67 rated</li>
+                    </ul>
+                    <button onclick="alert('Booking feature coming soon!')">Book</button>
+                </div>
+            </article>
+            <article class="w3-half">
+                <img src="https://ampere.greaveselectricmobility.com/storage/images/home/magnus-ex.webp" alt="Magnus EX">
+                <h1>MAGNUS EX</h1>
+                <h2>Convenience. Performance. Comfort.</h2>
+                <button onclick="toggleDetails('details2')">Details</button>
+                <div id="details2" class="details">
+                    <p>Price: ₹94,900</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li><b>Up to 112 km in a single charge:</b> Longest range in its segment</li>
+                        <li><b>Take Charge of your Ride:</b> Lets move to the new era of mobility, and get set to make</li>
+                        <li><b>Efficient motor:</b></li>
+                    </ul>
+                    <button onclick="alert('Booking feature coming soon!')">Book</button>
+                </div>
+            </article>
+            <article class="w3-half">
+                <img src="https://ampere.greaveselectricmobility.com/storage/images/zeal-ex/s_zeal_ex.webp" alt="Zeal EX">
+                <h1>ZEAL EX</h1>
+                <h2>Comfortable, Robust, Affordable.</h2>
+                <button onclick="toggleDetails('details3')">Details</button>
+                <div id="details3" class="details">
+                    <p>Price: ₹86,690</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li><b>80-100 kms:</b> Max Range</li>
+                        <li><b>Eco & Pocket Friendly Commute:</b> Save monies & the environment with every ride</li>
+                        <li><b>Road-Side Assistance:</b> Experience peace of mind by availing RSA at just ₹899/year (excl. of GST)!</li>
+                    </ul>
+                    <button onclick="alert('Booking feature coming soon!')">Book</button>
+                </div>
+            </article>
+            <article class="w3-half">
+                <img src="https://ampere.greaveselectricmobility.com/images/reo-plus/reo-red.webp" alt="Reo Li Plus">
+                <h1>Reo Li Plus</h1>
+                <h2>Simple. Youthful. Convenient</h2>
+                <button onclick="toggleDetails('details4')">Details</button>
+                <div id="details4" class="details">
+                    <p>Price: ₹59,900</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li><b>70+ km in single charge:</b> With removable battery pack</li>
+                        <li><b>Cost-effective maintenance</b></li>
+                        <li><b>Perfect for daily commute</b></li>
+                    </ul>
+                    <button onclick="alert('Booking feature coming soon!')">Book</button>
+                </div>
+            </article>
+            <article class="w3-half">
+                <img src="https://ampere.greaveselectricmobility.com/images/magnus-special/s_special_masthead.webp" alt="New Magnus EX">
+                <h1>New Magnus EX</h1>
+                <h2>Ease. Comfort. Inclusive</h2>
+                <button onclick="toggleDetails('details5')">Details</button>
+                <div id="details5" class="details">
+                    <p>Price: ₹94,900</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li><b>Luxurious design:</b></li>
+                        <li><b>3+2 extended warranty:</b> Get 3 years/30,000 km standard warranty and additional 2 years/20,000 km extended warranty (chargeable)</li>
+                        <li><b>Eco & Pocket Friendly Commute:</b> Save monies & the environment with every ride</li>
+                    </ul>
+                    <button onclick="alert('Booking feature coming soon!')">Book</button>
+                </div>
+            </article>
+            <article class="w3-half">
+                <img src="https://ampere.greaveselectricmobility.com/images/nexus-launch/s_nexus.webp" alt="Nexus">
+                <h1>Nexus</h1>
+                <h2>Nex-gen. State-of-the art. More soon.</h2>
+                <button onclick="toggleDetails('details6')">Details</button>
+                <div id="details6" class="details">
+                    <p>Price: ₹1.09 - 1.29 Lakh</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li><b>Battery Capacity:</b> 3 kWh</li>
+                        <li><b>Top Speed:</b> 93 km/h</li>
+                        <li><b>Advanced safety features:</b></li>
+                    </ul>
+                    <button onclick="alert('Booking feature coming soon!')">Book</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- JavaScript for details toggle -->
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+
+    <footer>
+        <p>@Shreeram motors</p>
+    </footer>
+
+</body>
+</html>
